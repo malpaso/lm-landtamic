@@ -1,0 +1,14 @@
+{{ $image_align = switch(
+    (align == 'left') => 'mx-auto md:mx-0 md:mr-auto',
+    (align == 'right') => 'mx-auto md:mx-0 md:ml-auto',
+    () => 'mx-auto')
+}}
+
+<div>
+    {{
+        partial:components/picture
+        class="object-contain w-full h-auto max-w-[8rem] {{ $image_align }}"
+        :image="image"
+        sizes="(min-width: 200px) 35vw, 90vw"
+    }}
+</div>

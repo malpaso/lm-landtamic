@@ -1,0 +1,9 @@
+{
+  "name": "malpaso/lm-landtamic",
+  "extra": {
+    "statamic": {
+      "name": "Landtamic",
+      "description": "Landtamic starter kit"
+    }
+  }
+}
